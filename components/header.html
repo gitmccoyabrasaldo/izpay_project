@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo_container">
+          <img
+            class="web"
+            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png"
+            alt="logo-brand"
+          />
+          <img
+            class="mobile"
+            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-square1@2x.png"
+            alt="logo-brand"
+          />
+        </div>
+
+        <ul class="links">
+          <li><a class="active" href="/index.html">HOME</a></li>
+          <li><a href="/page/About/">ABOUT US</a></li>
+          <li><a href="/page/Service/">SERVICE</a></li>
+          <li class="dropdown">
+            <a href="#"
+              >PAGES <span><i class="fa-solid fa-chevron-down"></i></span
+            ></a>
+
+            <ul class="dropdown_menu">
+              <li><a href="#">TEAM</a></li>
+              <li><a href="#">PRICING PLAN</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">PARTNER</a></li>
+              <li><a href="#">CAREER</a></li>
+              <li><a href="#">MEDIA</a></li>
+              <li><a href="#">SINGLE POST</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"
+              >CONTACT US <span><i class="fa-solid fa-chevron-down"></i></span
+            ></a>
+            <ul class="dropdown_menu">
+              <li><a href="#">CONTACT US-1</a></li>
+              <li><a href="#">CONTACT US-2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="action_button">GET STARTED</a>
+          </li>
+        </ul>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars" onclick="toggleSidebar()"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="overlay" id="sideBarOverlay"></div>
+    <aside class="sidebar" id="sideBar">
+      <header class="h_container">
+        <div class="logo">
+          <img
+            class="web"
+            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png"
+            alt="logo-brand"
+          />
+          <img
+            class="mobile"
+            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-square1@2x.png"
+            alt="logo-brand"
+          />
+        </div>
+        <div class="btn_close" onclick="toggleSidebar()">
+          <i class="fa-sharp fa-solid fa-x"></i>
+        </div>
+      </header>
+
+      <nav class="links">
+        <li><a class="active" href="/index.html">HOME</a></li>
+        <li><a href="/page/About/">ABOUT US</a></li>
+        <li><a href="/page/Service/">SERVICE</a></li>
+        <li class="menu">
+          <a href="#" onclick="toggleSubMenu1()"
+            >PAGES <span><i class="fa-solid fa-chevron-down"></i></span
+          ></a>
+
+          <ul class="sub_menu" id="sideMenu1">
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">PRICING PLAN</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">PARTNER</a></li>
+            <li><a href="#">CAREER</a></li>
+            <li><a href="#">MEDIA</a></li>
+            <li><a href="#">SINGLE POST</a></li>
+          </ul>
+        </li>
+
+        <li class="menu">
+          <a href="#" onclick="toggleSubMenu2()"
+            >CONTACT US <span><i class="fa-solid fa-chevron-down"></i></span
+          ></a>
+
+          <ul class="sub_menu" id="sideMenu2">
+            <li><a href="#">CONTACT US-1</a></li>
+            <li><a href="#">CONTACT US-2</a></li>
+          </ul>
+        </li>
+      </nav>
+    </aside>
+    <script src="/components/header.js"></script>
+  </body>
+</html>
