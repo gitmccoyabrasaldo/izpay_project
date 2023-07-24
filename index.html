@@ -13,116 +13,172 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo_container">
-          <img
-            class="web"
-            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png"
-            alt="logo-brand"
-          />
-          <img
-            class="mobile"
-            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-square1@2x.png"
-            alt="logo-brand"
-          />
+    <div class="back-ground-overlay"></div>
+    <div id="header"></div>
+    <section id="banner">
+      <div class="container">
+        <div class="container_row">
+          <div class="content_1">
+            <div class="title">
+              <h1><span>EASIEST</span> PAYMENT METHOD EVER</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <div class="two_button">
+              <a class="btn1" href="#">GET STARTED</a>
+              <a class="btn2" href="#">CONTACT US</a>
+            </div>
+          </div>
+          <div class="content_2">
+            <div class="pie">
+              <img
+                src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/Efficiencydark-1.png"
+                alt="pie-graph"
+              />
+            </div>
+            <img
+              src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/home-img-big@2x-e1609121743866.png"
+              alt="cellphone"
+            />
+            <div class="btn_cont">
+              <div class="btn">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h3 href="#">EASY PAYMENT</h3>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <ul class="links">
-          <li><a class="active" href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li class="dropdown">
-            <a href="#"
-              >PAGES <span><i class="fa-solid fa-chevron-down"></i></span
-            ></a>
+    <!-- partner logos-->
+    <div id="partner"></div>
 
-            <ul class="dropdown_menu">
-              <li><a href="#">TEAM</a></li>
-              <li><a href="#">PRICING PLAN</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">PARTNER</a></li>
-              <li><a href="#">CAREER</a></li>
-              <li><a href="#">MEDIA</a></li>
-              <li><a href="#">SINGLE POST</a></li>
-            </ul>
-          </li>
+    <!--promotions-->
+    <section id="promotions">
+      <div class="container__promotions">
+        <div class="container__contents">
+          <div class="content__1">
+            <img
+              src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/app-mockup-2-a@2x-e1610431074808.png"
+              alt="phone-app"
+            />
+          </div>
+          <div class="content__2">
+            <h2>Manage Everything in Your Hand</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </p>
+            <div class="description">
+              <div class="icon">
+                <img
+                  src="/assets/images/phone.png"
+                  alt=""
+                  class="description__icon"
+                />
+              </div>
+              <div class="description__text">
+                <h3>User Friendly</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
 
-          <li class="dropdown">
-            <a href="#"
-              >CONTACT US <span><i class="fa-solid fa-chevron-down"></i></span
-            ></a>
-            <ul class="dropdown_menu">
-              <li><a href="#">CONTACT US-1</a></li>
-              <li><a href="#">CONTACT US-2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="action_button">GET STARTED</a>
-          </li>
-        </ul>
+            <div class="description">
+              <div class="icon">
+                <img
+                  src="/assets/images/headset.png"
+                  alt=""
+                  class="description__icon"
+                />
+              </div>
+              <div class="description__text">
+                <h3>Best Support</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
 
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars" onclick="toggleSidebar()"></i>
+            <div class="description">
+              <div class="icon">
+                <img
+                  src="/assets/images/lock.png"
+                  alt=""
+                  class="description__icon"
+                />
+              </div>
+              <div class="description__text">
+                <h3>Secure</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <div class="overlay" id="sideBarOverlay"></div>
+    <!--merchants-->
+    <section id="merchants">
+      <div class="container__merchants">
+        <div class="container__contents">
+          <div class="content__1">
+            <h2>Enjoy Various Merchant's Promos</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </p>
+            <div class="btn_cont">
+              <a href="#">GET STARTED</a>
+            </div>
+          </div>
+          <div class="content__2">
+            <img
+              class="shape-img"
+              src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shape-1@2x.png"
+              alt="shapeee"
+            />
 
-    <aside class="sidebar" id="sideBar">
-      <header class="h_container">
-        <div class="logo">
-          <img
-            class="web"
-            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png"
-            alt="logo-brand"
-          />
-          <img
-            class="mobile"
-            src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-square1@2x.png"
-            alt="logo-brand"
-          />
+            <div class="bar">
+              <img
+                class="bar-graph"
+                src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/Last-Costslast-cost.png"
+                alt="bar-graph"
+              />
+            </div>
+            <div class="icons">
+              <img
+                class="col-icons"
+                src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shopping-icon-home@2x.png"
+                alt="icons"
+              />
+            </div>
+          </div>
         </div>
-        <div class="btn_close" onclick="toggleSidebar()">
-          <i class="fa-sharp fa-solid fa-x"></i>
-        </div>
-      </header>
+      </div>
+    </section>
 
-      <nav class="links">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">SERVICE</a></li>
-        <li class="menu">
-          <a href="#" onclick="toggleSubMenu1()"
-            >PAGES <span><i class="fa-solid fa-chevron-down"></i></span
-          ></a>
-
-          <ul class="sub_menu" id="sideMenu1">
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">PRICING PLAN</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">PARTNER</a></li>
-            <li><a href="#">CAREER</a></li>
-            <li><a href="#">MEDIA</a></li>
-            <li><a href="#">SINGLE POST</a></li>
-          </ul>
-        </li>
-
-        <li class="menu">
-          <a href="#" onclick="toggleSubMenu2()"
-            >CONTACT US <span><i class="fa-solid fa-chevron-down"></i></span
-          ></a>
-
-          <ul class="sub_menu" id="sideMenu2">
-            <li><a href="#">CONTACT US-1</a></li>
-            <li><a href="#">CONTACT US-2</a></li>
-          </ul>
-        </li>
-      </nav>
-    </aside>
-    <script src="./js/index.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
