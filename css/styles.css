@@ -749,7 +749,6 @@ header {
   background-image: url(/assets/images/merchant-woman.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-color: #030304;
 }
 
 #merchants .container__merchants .container__contents .content__2 img {
@@ -796,6 +795,235 @@ header {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
   animation-direction: alternate;
+}
+
+/* SERVICES */
+
+.container__services {
+  max-width: 1290px;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding: 80px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  width: 40%;
+}
+
+.container__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+  gap: 30px;
+  padding: 40px 0px;
+}
+
+.services-overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(/assets/svg/services-overlay.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 30px;
+  gap: 30px;
+  background-color: transparent;
+  background-image: radial-gradient(
+    at top right,
+    #1f1b41 0%,
+    var(--e-global-color-8f64ec5) 70%
+  );
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #8176ff00;
+  border-radius: 20px 20px 20px 20px;
+  transition: all 0.4s ease;
+}
+
+.cards--bg--none {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+
+  gap: 30px;
+}
+
+.btn--cards {
+  color: #ffffff;
+  padding: 20px 30px 20px 30px;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  background-image: linear-gradient(
+    60deg,
+    #6b5eff 0%,
+    var(--e-global-color-335476e) 82%
+  );
+  color: #f4f4f4 !important;
+  border-style: none;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.btn--cards:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #5849ff 0%, #5849ff 100%);
+}
+
+.cards:hover {
+  background-color: #202020;
+  border-style: solid;
+  border-color: var(--e-global-color-d0a6618);
+  transition: all 0.4s ease;
+}
+
+.cards h3 {
+  color: var(--e-global-color-335476e);
+  font-weight: 600;
+}
+
+.cards a {
+  color: var(--e-global-color-335476e);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.btn__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.btn__wrapper:hover > a,
+.btn__wrapper:hover > img {
+  transform: scale(1.05);
+}
+
+/* TESTIMONIAL */
+.container__testimonial {
+  display: flex;
+  max-width: 1290px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding: 80px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.background__testimonial {
+  /* display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  height: 380px;
+  width: 100%; */
+  background-image: url(/assets/svg/testimonial-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.paragraph__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.paragraph__container p {
+  position: relative;
+  padding: 0px 180px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--e-global-color-c975fe3);
+  font-family: "Montserrat", sans-serif;
+}
+
+.qoute__container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.qoute__container img {
+  width: 100px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.profile__testimonial {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.profile__picture {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.profile__name {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.profile__picture img {
+  width: 80px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.profile__name h2 {
+  color: var(--e-global-color-056eebd);
+  font-size: 1.125rem;
+}
+
+.profile__name p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 1rem;
 }
 
 /* RESPONSIVE */
@@ -896,6 +1124,43 @@ header {
 
   #merchants .container__merchants .container__contents {
     flex-direction: column-reverse !important;
+  }
+
+  /* SERVICES */
+
+  .container__services {
+    padding: 0px 15px;
+  }
+  .cards {
+    width: 100% !important;
+  }
+
+  .title__services {
+    width: 100% !important;
+    text-align: start;
+  }
+
+  .title__services h2 {
+    font-size: 1.875rem;
+  }
+
+  .title__services p {
+    font-size: 0.875rem;
+  }
+
+  .cards--bg--none {
+    padding: 0px !important;
+    width: 100% !important;
+  }
+
+  /* SERVICES */
+  .background__testimonial {
+    background-size: cover;
+  }
+
+  .paragraph__container p {
+    padding: 0px !important;
+    font-size: 0.875rem;
   }
 }
 
@@ -1046,5 +1311,37 @@ header {
   }
   #merchants .container__merchants .container__contents .content__2 {
     width: 100%;
+  }
+
+  /* SERVICES */
+
+  .title__services {
+    width: 70%;
+  }
+  .cards {
+    width: 40%;
+  }
+
+  .cards--bg--none {
+    padding: 40px;
+    width: 60%;
+  }
+
+  /* TESTIMONIAL */
+  .paragraph__container p {
+    padding: 0px 40px;
+  }
+
+  .profile__picture {
+    display: none;
+  }
+
+  .profile__testimonial {
+    justify-content: center;
+  }
+
+  .profile__name {
+    text-align: center;
+    padding-left: 0px;
   }
 }
