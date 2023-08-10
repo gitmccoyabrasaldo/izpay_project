@@ -949,7 +949,8 @@ header {
 .fa-person-chalkboard,
 .fa-mobile,
 .fa-coins,
-.fa-credit-card {
+.fa-credit-card,
+.fa-sack-dollar {
   color: var(--e-global-color-335476e);
   font-size: 2.5rem;
 }
